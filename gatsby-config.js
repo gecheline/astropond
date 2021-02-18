@@ -4,6 +4,7 @@ module.exports = {
     author: "Hunter Chang",
     description: "A Gatsby.js V2 Starter based on Forty by HTML5 UP"
   },
+  pathPrefix: `/astropond`,
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -22,3 +23,4 @@ module.exports = {
     'gatsby-plugin-offline'
   ],
 }
+
