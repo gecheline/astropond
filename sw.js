@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-55f7c36d8884ec05ee33.js"
+    "url": "webpack-runtime-ee5f11927f109fed6ac4.js"
   },
   {
     "url": "framework-acd7498685eeb36e39da.js"
   },
   {
-    "url": "app-f5d6fd2da1e20a4b27b5.js"
+    "url": "app-3f31e145f26ed8553ef2.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "f78e1b535d5caf6a923edb5fcf0f9eb1"
+    "revision": "3a197175698365d9c9a9e0f74a81aa13"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-b0556ce5127c1a3e2490.js"
@@ -48,14 +48,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "f1b7aef5d8ed287afe52160b82c93ef8"
+    "revision": "509ed6e7cec0cde42ef572759ae4c774"
   },
   {
     "url": "polyfill-f1ccabc21479e8bd39f3.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "c9105b1e3c4629b7ca9f8928ad441e60"
+    "revision": "906542c572d33426901021177e571409"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -147,7 +147,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/astropond/app-f5d6fd2da1e20a4b27b5.js`))) {
+  if (!resources || !(await caches.match(`/astropond/app-3f31e145f26ed8553ef2.js`))) {
     return await fetch(event.request)
   }
 
