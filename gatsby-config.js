@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Forty V2",
-    author: "Hunter Chang",
-    description: "A Gatsby.js V2 Starter based on Forty by HTML5 UP"
+    title: "astropond - Angela Kochoska",
+    author: "Angela Kochoska",
+    description: "A personal website (based on Gatsby.js Forty template starter by Hunter Chang)"
   },
   pathPrefix: `/astropond`,
   plugins: [
@@ -16,7 +16,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
+        icon: 'src/assets/images/astropond.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass',

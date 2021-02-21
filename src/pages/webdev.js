@@ -11,7 +11,7 @@ import pic10 from '../assets/images/pic10.jpg'
 const WebDev = (props) => (
     <Layout>
         <Helmet>
-            <title>Art & graphic design</title>
+            <title>Web development</title>
             <meta name="description" content="Landing Page" />
         </Helmet>
 
@@ -21,67 +21,34 @@ const WebDev = (props) => (
             <section id="one">
                 <div className="inner">
                     <header className="major">
-                        <h2>Art & graphic design</h2>
+                        <h2>Web development</h2>
                     </header>
                     <p>
-                        I've been into drawing ever since I can remember, but that part of me had taken the back seat for a long time. 
-                        Luckily, my husband, who is a musician, needed someone to do his EP artworks, so that ressurected my passion for everything art and graphic design.
-                        A dear friend also convinced me to join him on a "draw something every day" challenge at the start of 2021, so making art has been a part of my daily routine since January 1st 2021. 
-                        (It's not always good, but I learn something something new every day!)
-                    </p>
+                        Web development is where my loves for coding and design converge! 
+                        I am relatively new to it, but I have several completed projects that I have built from scratch, frontend and backend,
+                        following YouTube tutorials and courses on HTML, CSS, Javascript and React.js. 
+                        </p>
+                        <ul className="alt">
+                            <li><a href='http://flipofficial.com' target="_blank" rel="noopener noreferrer" style={{color: '#ff79cf'}}>
+                                Fl!p Official Website</a> 
+                            - an '80s themed website for Fl!p (musician and also, my husband) with a built-in "vintage radio" 
+                            React component that can play all of his releases directly in the website.</li>
+                            <li><a href='/' target="_blank" rel="noopener noreferrer" style={{color: '#ff79cf'}}>
+                                Astropond - current website</a> - built on top of the Forty V2 Gatsby.js template, 
+                            using Gatsby/React.js and GraphQL</li>
+                            <li><a href='https://gecheline.github.io/wedding-website' target="_blank" rel="noopener noreferrer" style={{color: '#ff79cf'}}>
+                                My wedding website</a> - a simple, geeky, Doctor Who themed 
+                            website for my wedding (pure HTML/CSS/Javascript)</li>
+                            <li>Timed web slideshows for 
+                                <a href='https://gecheline.github.io/bhm' target="_blank" rel="noopener noreferrer" style={{color: '#ff79cf'}}> Black History Month </a> 
+                                and <a href='https://gecheline.github.io/whm2020' target="_blank" rel="noopener noreferrer" style={{color: '#ff79cf'}}> Women History Month </a> 
+                                celebrating black and women pioneers in astronomy and astrophysics.
+                            These are displayed on my department's dashboard every February and March.</li>
+                        </ul>
+                    
                 </div>
             </section>
-            <section id="two" className="spotlights">
-                <section>
-                    <div className="image">
-                        <img src={pic08} alt="" />
-                        </div>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Fl!p artwork</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div className="image">
-                        <img src={pic09} alt="" />
-                    </div>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>365 drawings challenge</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div className="image">
-                        <img src={pic10} alt="" />
-                    </div>
-                    <div className="content">
-                        <div className="inner">
-                            <header className="major">
-                                <h3>Logos</h3>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/generic" className="button">Learn more</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                
-            </section>
+            
         </div>
 
     </Layout>
