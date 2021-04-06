@@ -4,12 +4,14 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 
-import pic01 from '../assets/images/pic01.jpg'
+
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
-import pic05 from '../assets/images/pic05.jpg'
 import pic06 from '../assets/images/pic06.jpg'
+
+import resumepdf from '../files/resume_akochoska.pdf'
+import cvpdf from '../files/CV_Kochoska.pdf'
 
 class HomeIndex extends React.Component {
     render() {
@@ -36,21 +38,27 @@ class HomeIndex extends React.Component {
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article> */}
-                        <article style={{backgroundImage: `url(${pic02})`}}>
+                        
+                        {/* <article style={{backgroundImage: `url(${pic02})`}}> */}
+                        <article>
                             <header className="major">
                                 <h3>Science / Research</h3>
                                 <p>Eclipsing binaries and the little intricacies of their modeling.</p>
                             </header>
                             <Link to="/research" className="link primary"></Link>
                         </article>
-                        <article style={{backgroundImage: `url(${pic03})`}}>
+
+                        {/* <article style={{backgroundImage: `url(${pic03})`}}> */}
+                        <article>
                             <header className="major">
                                 <h3>Art & graphic design</h3>
                                 <p>Fun little (and big) projects I do in my free time.</p>
                             </header>
                             <Link to="/art" className="link primary"></Link>
                         </article>
-                        <article style={{backgroundImage: `url(${pic04})`}}>
+
+                        {/* <article style={{backgroundImage: `url(${pic04})`}}> */}
+                        <article>
                             <header className="major">
                                 <h3>Web development</h3>
                                 <p>Websites and web-hosted slide shows I have built from scratch.</p>
@@ -64,13 +72,15 @@ class HomeIndex extends React.Component {
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article> */}
-                        <article style={{backgroundImage: `url(${pic06})`}}>
+                        {/* <article style={{backgroundImage: `url(${pic06})`}}> */}
+                        <article>
                             <header className="major">
                                 <h3>Blog</h3>
                             </header>
                             <Link to="/blog" className="link primary"></Link>
                         </article>
                     </section>
+                    
                     <section id="aboutme">
                         <div className="inner">
                             <header className="major">
@@ -85,8 +95,8 @@ class HomeIndex extends React.Component {
                                 I have also recently rediscovered my love for art and creative projects, so you can see what
                                 I've been up to in my free time as well!</p>
                             <ul className="actions">
-                                <li><Link to="/landing" className="button">R&Eacute;SUM&Eacute;</Link></li>
-                                <li><Link to="/landing" className="button">CV (ACADEMIC)</Link></li>
+                                <li><a href={resumepdf} className="button">R&Eacute;SUM&Eacute;</a></li>
+                                <li><a href={cvpdf} className="button">CV (ACADEMIC)</a></li>
                             </ul>
                         </div>
                     </section>
