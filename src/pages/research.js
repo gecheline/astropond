@@ -4,9 +4,11 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
 
-import pic08 from '../assets/images/pic08.jpg'
-import pic09 from '../assets/images/pic09.jpg'
-import pic10 from '../assets/images/pic10.jpg'
+import pic_cbs from '../assets/images/contact_q05_lp.gif'
+import pic_tess from '../assets/images/tess_dash.gif'
+import pic_kepler from '../assets/images/kepler_tsne.gif'
+import poster from '../assets/images/poster.gif'
+import pic08 from '../assets/images/pic10.jpg'
 
 const Research = (props) => (
     <Layout>
@@ -31,9 +33,11 @@ const Research = (props) => (
             </section>
             <section id="two" className="spotlights">
                 <section>
+                <a href = 'https://aas237-aas.ipostersessions.com/?s=FF-87-4C-85-9F-68-8D-B0-3A-17-7A-8B-17-D5-48-10'>
                     <div className="image">
-                        {/* <img src={pic08} alt="" /> */}
+                        <img src={poster} alt="" />
                         </div>
+                        </a>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
@@ -41,8 +45,8 @@ const Research = (props) => (
                             </header>
                             <ul>
                                 <li>Developed methods for quick estimates using analytical models of the 
-                                    <a href='http://phoebe-project.org/docs/2.3/tutorials/LC_estimators'>light</a>
-                                     and <a href='http://phoebe-project.org/docs/2.3/tutorials/RV_estimators'>radial velocity</a> curves</li>
+                                    <a href='http://phoebe-project.org/docs/2.3/tutorials/LC_estimators'> light </a>
+                                     and <a href='http://phoebe-project.org/docs/2.3/tutorials/RV_estimators'> radial velocity</a> curves</li>
                                 <li>Introduced <a href='https://github.com/gecheline/phoetting/blob/master/grid_search/all_grid_fit.ipynb'>
                                     nearest-neighbor search from synthetic database</a> for fast parameter estimation</li>
                                 <li>Introduced robust, <a href='https://github.com/gecheline/phoetting/tree/master/automated_fitting'>semi-automated fitting</a> based on PHOEBE</li>
@@ -56,15 +60,15 @@ const Research = (props) => (
                 </section>
                 <section>
                     <div className="image">
-                        {/* <img src={pic09} alt="" /> */}
+                        <img src={pic_kepler} alt="" />
                     </div>
                     <div className="content">
                         <div className="inner">
                             <header className="major">
-                                <h3>Machine learning</h3>
+                                <h3>Data analysis and machine learning</h3>
                             </header>
                             <ul>
-                                <li>Introduced <a href='http://keplerebs.villanova.edu/tsne'>visualization of the Kepler EB catalog with t-SNE</a></li>
+                                <li>Computed <a href='http://keplerebs.villanova.edu/tsne'>3D and 2D maps of the Kepler EB catalog</a> with t-SNE</li>
                                 <li>Estimated the <a href='https://arxiv.org/pdf/1703.09362.pdf'>detectability of eclipsing binaries</a> with the Gaia satellite</li>
                                 <li>(work in progress) Refinement of the orbital periods of TESS EBs</li>
                                 <li>(work in progress) Classification, statistical analysis and visualization of the TESS EB catalog</li>
@@ -74,7 +78,7 @@ const Research = (props) => (
                 </section>
                 <section>
                     <div className="image">
-                        {/* <img src={pic10} alt="" /> */}
+                        <img src={pic_cbs} alt="" />
                     </div>
                     <div className="content">
                         <div className="inner">
