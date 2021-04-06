@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-ee5f11927f109fed6ac4.js"
+    "url": "webpack-runtime-3009ddf2653dac9fc5d8.js"
   },
   {
     "url": "framework-acd7498685eeb36e39da.js"
   },
   {
-    "url": "app-3f31e145f26ed8553ef2.js"
+    "url": "app-0d13dc82e07f72fe6d03.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "3a197175698365d9c9a9e0f74a81aa13"
+    "revision": "bf0dbe017e65ec01a157196ad926f44d"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-b0556ce5127c1a3e2490.js"
@@ -48,21 +48,21 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "509ed6e7cec0cde42ef572759ae4c774"
+    "revision": "6d0801515053856008e6e240073ae4cc"
   },
   {
     "url": "polyfill-f1ccabc21479e8bd39f3.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "906542c572d33426901021177e571409"
+    "revision": "09b9752284d607bcd55bd59136221fa1"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, new workbox.strategies.CacheFirst(), 'GET');
 workbox.routing.registerRoute(/^https?:.*\/page-data\/.*\.json/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
-workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
+workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|avif|svg|gif|tiff|js|woff|woff2|json|css)$/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 workbox.routing.registerRoute(/^https?:\/\/fonts\.googleapis\.com\/css/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 
 /* global importScripts, workbox, idbKeyval */
@@ -147,7 +147,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/astropond/app-3f31e145f26ed8553ef2.js`))) {
+  if (!resources || !(await caches.match(`/astropond/app-0d13dc82e07f72fe6d03.js`))) {
     return await fetch(event.request)
   }
 
